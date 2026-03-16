@@ -5,21 +5,21 @@
 class Gpc < Formula
   desc "Google Play Console CLI"
   homepage "https://github.com/leszko11/google-play-console-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.3.0/gpc_v0.3.0_darwin_amd64.tar.gz"
-      sha256 "e6b2b0bd417cc59b67d0a8e5cca33fd70ea65b3e49d5e2de935ba146d1ade9aa"
+      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.4.0/gpc_v0.4.0_darwin_amd64.tar.gz"
+      sha256 "89286cce0b7ccaab31bfb1e5bb6135aa68078cdaf17a3854982a8f38e1534147"
 
       define_method(:install) do
         bin.install "gpc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.3.0/gpc_v0.3.0_darwin_arm64.tar.gz"
-      sha256 "0f75a1e215f624230b4c6971da6a2a280f653a4783950602abb0dadbf6040709"
+      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.4.0/gpc_v0.4.0_darwin_arm64.tar.gz"
+      sha256 "857ad926769c3f208c04c845b4fe2d32908420ee2ae403ce6bc0079429f3524b"
 
       define_method(:install) do
         bin.install "gpc"
@@ -29,15 +29,15 @@ class Gpc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.3.0/gpc_v0.3.0_linux_amd64.tar.gz"
-      sha256 "16d6fddad5c482b1c91fc5b857146b4d8a9574ad61437b1fef4a625b34b98f82"
+      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.4.0/gpc_v0.4.0_linux_amd64.tar.gz"
+      sha256 "2df27fdc9e34951b25b870a284d3eee01c2f5e03a17bb9ce735595676a1f5647"
       define_method(:install) do
         bin.install "gpc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.3.0/gpc_v0.3.0_linux_arm64.tar.gz"
-      sha256 "ba00500f00efadb9c5759484bb50b4e7220339922fd7a448b5d7ea39bedef973"
+      url "https://github.com/leszko11/google-play-console-cli/releases/download/v0.4.0/gpc_v0.4.0_linux_arm64.tar.gz"
+      sha256 "87342d875fa2695597cc3e5760a20157215266e3a5209f4d88617aa1e564d33b"
       define_method(:install) do
         bin.install "gpc"
       end
